@@ -64,4 +64,4 @@ public class UserPlane extends FighterPlane {
     private double getProjectileY() {
         return getLayoutY() + getTranslateY() + UserPlaneConfig.PROJECTILE_Y_OFFSET;
     }
-} 
+}
