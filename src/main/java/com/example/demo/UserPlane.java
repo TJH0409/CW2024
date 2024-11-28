@@ -2,12 +2,12 @@ package com.example.demo;
 
 public class UserPlane extends FighterPlane {
     private int velocityMultiplier;
-    private int killCount;
+    private int numberOfKills;
 
     public UserPlane(int initialHealth) {
         super(UserPlaneConfig.IMAGE_NAME, UserPlaneConfig.IMAGE_HEIGHT, UserPlaneConfig.INITIAL_X_POSITION, UserPlaneConfig.INITIAL_Y_POSITION, initialHealth);
         this.velocityMultiplier = 0;
-        this.killCount = 0;
+        this.numberOfKills = 0;
     }
 
     @Override
@@ -18,7 +18,7 @@ public class UserPlane extends FighterPlane {
         moveVertically(UserPlaneConfig.VERTICAL_VELOCITY * velocityMultiplier);
 
         if (isOutOfBounds()) {
-            setTranslateY(initialY); // Reset position if out of bounds
+            setTranslateY(initialY); // if out of bound reset position
         }
     }
 
@@ -44,12 +44,12 @@ public class UserPlane extends FighterPlane {
         velocityMultiplier = 0;
     }
 
-    public int getKillCount() {
-        return killCount;
+    public int getNumberOfKills() {
+        return numberOfKills;
     }
 
     public void incrementKillCount() {
-        killCount++;
+    	numberOfKills++;
     }
 
     private boolean isMoving() {
