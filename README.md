@@ -3,8 +3,6 @@ GitHub: Provide the link to your GitHub repository.
 Compilation Instructions: Provide a clear, step-by-step guide on how to compile the code to produce the application. Include any dependencies or special settings required.
 
 Implemented and Working Properly: List the features that have been successfully implemented and are functioning as expected. Provide a brief description of each.
-  found and fix a typo in EnemyPlane (projectileYPostion to projectileYPosition)
-  found the error InvocationTargetException (fixed)
 
 Implemented but Not Working Properly: List any features that have been implemented but are not working correctly. Explain the issues you encountered, and if possible, the steps you took to address them.
 
