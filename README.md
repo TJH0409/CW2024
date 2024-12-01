@@ -4,6 +4,8 @@ Compilation Instructions: Provide a clear, step-by-step guide on how to compile 
 
 Implemented and Working Properly: List the features that have been successfully implemented and are functioning as expected. Provide a brief description of each.
 
+  implement pause game function
+
 Implemented but Not Working Properly: List any features that have been implemented but are not working correctly. Explain the issues you encountered, and if possible, the steps you took to address them.
 
 Features Not Implemented: Identify any features that you were unable to implement and provide a clear explanation for why they were left out.
