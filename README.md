@@ -9,9 +9,11 @@ Implemented but Not Working Properly: List any features that have been implement
 Features Not Implemented: Identify any features that you were unable to implement and provide a clear explanation for why they were left out.
 
 New Java Classes: Enumerate any new Java classes that you introduced for the assignment. Include a brief description of each class's purpose and its location in the code.
+
   add pause game function in LevelParent
 
 Modified Java Classes: List the Java classes you modified from the provided code base. Describe the changes you made and explain why these modifications were necessary.
+
   split Boss into smaller files (BossConfig, Shield and Boss) for easier maintainance
   split UserPlane into smaller files with UserPlanConfig and UserPlane for easier maintainance
   found and fix a typo in EnemyPlane (projectileYPostion to projectileYPosition)
