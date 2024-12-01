@@ -24,6 +24,7 @@ public abstract class LevelParent extends Observable {
 	private final UserPlane user;
 	private final Scene scene;
 	private final ImageView background;
+	private boolean gamePlaying;
 
 	private final List<ActiveActorDestructible> friendlyUnits;
 	private final List<ActiveActorDestructible> enemyUnits;
@@ -71,10 +72,23 @@ public abstract class LevelParent extends Observable {
 	public void startGame() {
 		background.requestFocus();
 		timeline.play();
+		gamePlaying = true; //game set to running at the beginning else user freeze in place
 	}
 
+	// add a pause game function
+	public void functPause() {
+		if (gamePlaying) {
+			gamePlaying = false;
+			timeline.pause();
+		}
+		else {
+			gamePlaying = true;
+			timeline.play();
+		}
+	}
+	
 	public void goToNextLevel(String levelName) {
-		timeline.stop();
+		timeline.stop(); //to fix the pop up
 		setChanged();
 		notifyObservers(levelName);
 	}
@@ -107,6 +121,8 @@ public abstract class LevelParent extends Observable {
 		background.setOnKeyPressed(new EventHandler<KeyEvent>() {
 			public void handle(KeyEvent e) {
 				KeyCode kc = e.getCode();
+				if (kc == KeyCode.ESCAPE) functPause(); //press Esc to pause game
+				if (!gamePlaying) return;
 				if (kc == KeyCode.UP) user.moveUp();
 				if (kc == KeyCode.DOWN) user.moveDown();
 				if (kc == KeyCode.SPACE) fireProjectile();
@@ -209,11 +225,13 @@ public abstract class LevelParent extends Observable {
 	protected void winGame() {
 		timeline.stop();
 		levelView.showWinImage();
+		gamePlaying = false;
 	}
 
 	protected void loseGame() {
 		timeline.stop();
 		levelView.showGameOverImage();
+		gamePlaying = false;
 	}
 
 	protected UserPlane getUser() {
