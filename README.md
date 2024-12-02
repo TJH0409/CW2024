@@ -26,4 +26,6 @@ Modified Java Classes: List the Java classes you modified from the provided code
   
   found the error InvocationTargetException (fixed by adding timeline.stop in goToNextLevel)
 
+  put all config files into a package
+
 Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
