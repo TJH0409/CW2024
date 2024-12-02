@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.config.EnemyPlaneConfig;
+
 public class EnemyPlane extends FighterPlane {
     private final EnemyPlaneConfig config;
 

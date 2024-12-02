@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.config;
 
 public class UserPlaneConfig {
     public static final String IMAGE_NAME = "userplane.png";

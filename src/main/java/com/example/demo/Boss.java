@@ -2,6 +2,8 @@ package com.example.demo;
 
 import java.util.*;
 
+import com.example.demo.config.BossConfig;
+
 public class Boss extends FighterPlane {
     private final List<Integer> movePattern = new ArrayList<>();
     private final Shield shield;

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.config;
 
 public class BossConfig {
     public static final String IMAGE_NAME = "bossplane.png";
