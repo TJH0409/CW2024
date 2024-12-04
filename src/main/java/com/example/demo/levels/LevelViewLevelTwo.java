@@ -1,6 +1,6 @@
 package com.example.demo.levels;
 
-import com.example.demo.ShieldImage;
+import com.example.demo.image.ShieldImage;
 
 import javafx.scene.Group;
 
