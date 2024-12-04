@@ -27,6 +27,8 @@ Modified Java Classes: List the Java classes you modified from the provided code
   found and fix a typo in EnemyPlane (projectileYPostion to projectileYPosition)
   
   fix the shield image format (jpg to png)
+
+  repackage and make changes to all relevant codes
   
   found the error InvocationTargetException (fixed by adding timeline.stop in goToNextLevel)
 
@@ -36,7 +38,7 @@ Modified Java Classes: List the Java classes you modified from the provided code
 
   put all image.java files into a package and make changes to relevant codes
   
-  put all image.java files into a package and make changes to relevant codes
+  put all projectile files into a package and make changes to relevant codes
   
 
 Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
