@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.config.UserPlaneConfig;
+import com.example.demo.projectile.UserProjectile;
 
 public class UserPlane extends FighterPlane {
     private int velocityMultiplier;

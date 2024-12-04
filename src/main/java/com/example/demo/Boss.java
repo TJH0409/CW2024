@@ -3,6 +3,7 @@ package com.example.demo;
 import java.util.*;
 
 import com.example.demo.config.BossConfig;
+import com.example.demo.projectile.BossProjectile;
 
 public class Boss extends FighterPlane {
     private final List<Integer> movePattern = new ArrayList<>();
