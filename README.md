@@ -10,9 +10,13 @@ Implemented but Not Working Properly: List any features that have been implement
 
 Features Not Implemented: Identify any features that you were unable to implement and provide a clear explanation for why they were left out.
 
+  endless mode that give player points at kill, display highest score (time issue hence not implemented)
+
+  random power-ups like invincible, double fire rate, increase movement speed occasionally drop when killing enemy(deleted, try to implement but causes error that i dont have enough time to fix)
+
 New Java Classes: Enumerate any new Java classes that you introduced for the assignment. Include a brief description of each class's purpose and its location in the code.
 
-  add pause game function in LevelParent
+  add pause game function in LevelParent so player can pause the game at anytime
 
 Modified Java Classes: List the Java classes you modified from the provided code base. Describe the changes you made and explain why these modifications were necessary.
 
@@ -26,8 +30,10 @@ Modified Java Classes: List the Java classes you modified from the provided code
   
   found the error InvocationTargetException (fixed by adding timeline.stop in goToNextLevel)
 
-  put all config files into a package
+  put all config files into a package and make changes to relevant codes
 
-  put all level files into a package
+  put all level files into a package and make changes to relevant codes
+
+  put all image.java files into a package and make changes to relevant codes
 
 Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
