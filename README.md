@@ -35,5 +35,8 @@ Modified Java Classes: List the Java classes you modified from the provided code
   put all level files into a package and make changes to relevant codes
 
   put all image.java files into a package and make changes to relevant codes
+  
+  put all image.java files into a package and make changes to relevant codes
+  
 
 Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
