@@ -54,5 +54,6 @@ Modified Java Classes: List the Java classes you modified from the provided code
   
   put all projectile files into a package and make changes to relevant codes
   
+  put remaining files (boss, userplane enemyplane etc) into a package - actor and make changes to all relevant codes
 
 Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
