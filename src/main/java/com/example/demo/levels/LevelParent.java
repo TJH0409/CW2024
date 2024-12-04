@@ -1,5 +1,8 @@
-package com.example.demo;
+package com.example.demo.levels;
 
+import com.example.demo.ActiveActorDestructible;
+import com.example.demo.FighterPlane;
+import com.example.demo.UserPlane;
 import java.util.*;
 import java.util.stream.Collectors;
 
