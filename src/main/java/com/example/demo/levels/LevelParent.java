@@ -1,12 +1,13 @@
 package com.example.demo.levels;
 
-import com.example.demo.ActiveActorDestructible;
-import com.example.demo.FighterPlane;
-import com.example.demo.UserPlane;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
-import java.util.stream.Collectors; 
+import java.util.stream.Collectors;
+
+import com.example.demo.actor.ActiveActorDestructible;
+import com.example.demo.actor.FighterPlane;
+import com.example.demo.actor.UserPlane;
 
 import javafx.animation.*;
 import javafx.event.EventHandler;

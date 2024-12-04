@@ -3,7 +3,7 @@ module com.example.demo {
     requires javafx.fxml;
 
 
-    opens com.example.demo to javafx.fxml;
+    opens com.example.demo.actor to javafx.fxml;
     opens com.example.demo.levels to javafx.fxml;
     opens com.example.demo.image to javafx.fxml;
     opens com.example.demo.projectile to javafx.fxml;

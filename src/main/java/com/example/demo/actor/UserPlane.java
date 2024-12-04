@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.actor;
 
 import com.example.demo.config.UserPlaneConfig;
 import com.example.demo.projectile.UserProjectile;

@@ -1,7 +1,7 @@
 package com.example.demo.levels;
 
-import com.example.demo.ActiveActorDestructible;
-import com.example.demo.EnemyPlane;
+import com.example.demo.actor.ActiveActorDestructible;
+import com.example.demo.actor.EnemyPlane;
 public class LevelOne extends LevelParent {
 	
 	private static final String BACKGROUND_IMAGE_NAME = "/com/example/demo/images/background1.jpg";
