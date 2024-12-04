@@ -1,8 +1,8 @@
-##GitHub: Provide the link to your GitHub repository.
+GitHub: Provide the link to your GitHub repository.
 
-##Compilation Instructions: Provide a clear, step-by-step guide on how to compile the code to produce the application. Include any dependencies or special settings required.
+Compilation Instructions: Provide a clear, step-by-step guide on how to compile the code to produce the application. Include any dependencies or special settings required.
 
-##Implemented and Working Properly: List the features that have been successfully implemented and are functioning as expected. Provide a brief description of each.
+Implemented and Working Properly: List the features that have been successfully implemented and are functioning as expected. Provide a brief description of each.
 
   implement pause game function
 
@@ -10,15 +10,15 @@
 
   fix the shield image format to resolve error
 
-##Implemented but Not Working Properly: List any features that have been implemented but are not working correctly. Explain the issues you encountered, and if possible, the steps you took to address them.
+Implemented but Not Working Properly: List any features that have been implemented but are not working correctly. Explain the issues you encountered, and if possible, the steps you took to address them.
 
-##Features Not Implemented: Identify any features that you were unable to implement and provide a clear explanation for why they were left out.
+Features Not Implemented: Identify any features that you were unable to implement and provide a clear explanation for why they were left out.
 
   endless mode that give player points at kill, display highest score (time issue hence not implemented)
 
   random power-ups like invincible, double fire rate, increase movement speed occasionally drop when killing enemy(deleted, try to implement but causes error that i dont have enough time to fix)
 
-##New Java Classes: Enumerate any new Java classes that you introduced for the assignment. Include a brief description of each class's purpose and its location in the code.
+New Java Classes: Enumerate any new Java classes that you introduced for the assignment. Include a brief description of each class's purpose and its location in the code.
 
   add pause game function in LevelParent so player can pause the game at anytime
 
@@ -30,7 +30,7 @@
 
   EnemyPlaneConfig - seperated from enemyplane.java
 
-##Modified Java Classes: List the Java classes you modified from the provided code base. Describe the changes you made and explain why these modifications were necessary.
+Modified Java Classes: List the Java classes you modified from the provided code base. Describe the changes you made and explain why these modifications were necessary.
 
   split Boss into smaller files (BossConfig, Shield and Boss) for easier maintainance
   
@@ -56,4 +56,4 @@
   
   put remaining files (boss, userplane enemyplane etc) into a package - actor and make changes to all relevant codes
 
-##Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
+Unexpected Problems: Communicate any unexpected challenges or issues you encountered during the assignment. Describe how you addressed or attempted to resolve them.
