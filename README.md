@@ -32,13 +32,15 @@
 
   - EnemyPlaneConfig - seperated from enemyplane.java
 
+  - InputHandler - seperated from levelparent.java
+
 ## Modified Java Classes: 
 
-  - split Boss into smaller files (BossConfig, Shield and Boss) for easier maintainance
+  - split Boss.java into smaller files (BossConfig, Shield and Boss) for easier maintainance
   
-  - split UserPlane into smaller files with UserPlanConfig and UserPlane for easier maintainance
+  - split UserPlane.java into smaller files with UserPlanConfig and UserPlane for easier maintainance
 
-  -  split EnemyPlane into smaller files (EnemyPlaneConfig and EnemyPlane) for easier maintainance
+  -  split EnemyPlane.java into smaller files (EnemyPlaneConfig and EnemyPlane) for easier maintainance
   
   - found and fix a typo in EnemyPlane.java (projectileYPostion to projectileYPosition)
   
@@ -59,6 +61,8 @@
   - put remaining .java files (boss, userplane enemyplane etc) into a package - actor and make changes to all relevant codes
 
   - modified UserPlaneConfig.java, UserPlane.java and LevelParent.java to implement horizontal movement
+
+  - split InputHandler.java from LevelParent.java for easier maintainance
 
 ## Unexpected Problems: 
   - Got really sick in mid November and delayed all work (assignments, classes) by about a week
