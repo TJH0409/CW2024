@@ -12,6 +12,8 @@
 
   - implement horizontal movements(left right) for user plane
 
+  - new enemy added to the game
+
 ## Implemented but Not Working Properly: 
 
 ## Features Not Implemented: 
@@ -33,6 +35,10 @@
   - EnemyPlaneConfig - seperated from enemyplane.java
 
   - InputHandler - seperated from levelparent.java
+
+  - EnemyPlane2Config - added a new type of enemy
+
+  - EnemyPlane2 - new enemy
 
 ## Modified Java Classes: 
 
