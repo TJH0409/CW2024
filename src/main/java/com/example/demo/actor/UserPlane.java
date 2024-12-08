@@ -4,12 +4,14 @@ import com.example.demo.config.UserPlaneConfig;
 import com.example.demo.projectile.UserProjectile;
 
 public class UserPlane extends FighterPlane {
-    private int velocityMultiplier;
+    private int verticalVelocityMultiplier; //for up down
+    private int horizontalVelocityMultiplier; //for left right
     private int numberOfKills;
 
     public UserPlane(int initialHealth) {
         super(UserPlaneConfig.IMAGE_NAME, UserPlaneConfig.IMAGE_HEIGHT, UserPlaneConfig.INITIAL_X_POSITION, UserPlaneConfig.INITIAL_Y_POSITION, initialHealth);
-        this.velocityMultiplier = 0;
+        this.verticalVelocityMultiplier = 0;
+        this.horizontalVelocityMultiplier = 0;
         this.numberOfKills = 0;
     }
 
@@ -18,10 +20,17 @@ public class UserPlane extends FighterPlane {
         if (!isMoving()) return;
 
         double initialY = getTranslateY();
-        moveVertically(UserPlaneConfig.VERTICAL_VELOCITY * velocityMultiplier);
-
-        if (isOutOfBounds()) {
-            setTranslateY(initialY); // if out of bound reset position
+        double initialX = getTranslateX();
+        
+        moveVertically(UserPlaneConfig.VERTICAL_VELOCITY * verticalVelocityMultiplier);
+        moveHorizontally(UserPlaneConfig.HORIZONTAL_VELOCITY * horizontalVelocityMultiplier);
+       
+        if (isOutOfVerticalBounds()) {
+            setTranslateY(initialY); 
+        }
+        
+        if (isOutOfHorizontalBounds()) {
+            setTranslateX(initialX); 
         }
     }
 
@@ -32,19 +41,33 @@ public class UserPlane extends FighterPlane {
 
     @Override
     public ActiveActorDestructible fireProjectile() {
-        return new UserProjectile(UserPlaneConfig.PROJECTILE_X_POSITION, getProjectileY());
+    	double projectileX = getProjectileX();
+    	double projectileY = getProjectileY();
+        return new UserProjectile(projectileX, projectileY);
     }
 
     public void moveUp() {
-        velocityMultiplier = -1;
+        verticalVelocityMultiplier = -1;
     }
 
     public void moveDown() {
-        velocityMultiplier = 1;
+        verticalVelocityMultiplier = 1;
+    }
+    
+    public void moveLeft() {
+        horizontalVelocityMultiplier = -1;
     }
 
-    public void stop() {
-        velocityMultiplier = 0;
+    public void moveRight() {
+        horizontalVelocityMultiplier = 1;
+    }
+
+    public void stopVertical() {
+        verticalVelocityMultiplier = 0;
+    }
+    
+    public void stopHorizontal() {
+        horizontalVelocityMultiplier = 0;
     }
 
     public int getNumberOfKills() {
@@ -56,15 +79,24 @@ public class UserPlane extends FighterPlane {
     }
 
     private boolean isMoving() {
-        return velocityMultiplier != 0;
+        return verticalVelocityMultiplier != 0 || horizontalVelocityMultiplier != 0;
     }
 
-    private boolean isOutOfBounds() {
+    private boolean isOutOfVerticalBounds() {
         double newY = getLayoutY() + getTranslateY();
         return newY < UserPlaneConfig.Y_UPPER_BOUND || newY > UserPlaneConfig.Y_LOWER_BOUND;
+    }
+    
+    private boolean isOutOfHorizontalBounds() {
+        double newX = getLayoutX() + getTranslateX();
+        return newX < UserPlaneConfig.X_LEFT_BOUND || newX > UserPlaneConfig.X_RIGHT_BOUND;
     }
 
     private double getProjectileY() {
         return getLayoutY() + getTranslateY() + UserPlaneConfig.PROJECTILE_Y_OFFSET;
+    }
+    
+    private double getProjectileX() {
+        return getLayoutX() + getTranslateX() + UserPlaneConfig.PROJECTILE_X_POSITION;
     }
 } 

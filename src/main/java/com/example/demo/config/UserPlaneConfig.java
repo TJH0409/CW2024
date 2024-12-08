@@ -10,4 +10,8 @@ public class UserPlaneConfig {
     public static final int VERTICAL_VELOCITY = 8;
     public static final int PROJECTILE_X_POSITION = 110;
     public static final int PROJECTILE_Y_OFFSET = 20;
+    //added for horizontal movements
+    public static final double X_LEFT_BOUND = 0.0;
+    public static final double X_RIGHT_BOUND = 800.0; 
+    public static final int HORIZONTAL_VELOCITY = 8;
 }

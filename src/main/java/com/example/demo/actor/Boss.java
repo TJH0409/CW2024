@@ -23,7 +23,7 @@ public class Boss extends FighterPlane {
         double initialY = getTranslateY();
         moveVertically(getNextMove());
         if (isOutOfBounds()) {
-            setTranslateY(initialY); // Reset to avoid going out of bounds
+            setTranslateY(initialY); 
         }
     }
 
@@ -49,7 +49,7 @@ public class Boss extends FighterPlane {
         for (int i = 0; i < BossConfig.MOVE_FREQUENCY; i++) {
             movePattern.add(BossConfig.VERTICAL_VELOCITY);
             movePattern.add(-BossConfig.VERTICAL_VELOCITY);
-            movePattern.add(0); // No movement
+            movePattern.add(0); 
         }
         shuffleMovePattern();
     }
