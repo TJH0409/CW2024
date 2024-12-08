@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import com.example.demo.actor.ActiveActorDestructible;
 import com.example.demo.actor.FighterPlane;
 import com.example.demo.actor.UserPlane;
+import com.example.demo.input.InputHandler;
 
 import javafx.animation.*;
 import javafx.event.EventHandler;
@@ -39,12 +40,14 @@ public abstract class LevelParent extends Observable {
 	
 	private int currentNumberOfEnemies;
 	private LevelView levelView;
+	private InputHandler inputHandler;
 
 	public LevelParent(String backgroundImageName, double screenHeight, double screenWidth, int playerInitialHealth) {
 		this.root = new Group();
 		this.scene = new Scene(root, screenWidth, screenHeight);
 		this.timeline = new Timeline();
 		this.user = new UserPlane(playerInitialHealth);
+		this.inputHandler = new InputHandler(user, this::functPause, this::fireProjectile);
 		this.friendlyUnits = new ArrayList<>();
 		this.enemyUnits = new ArrayList<>();
 		this.userProjectiles = new ArrayList<>();
@@ -121,29 +124,14 @@ public abstract class LevelParent extends Observable {
 	}
 
 	private void initializeBackground() {
-		background.setFocusTraversable(true);
-		background.setFitHeight(screenHeight);
-		background.setFitWidth(screenWidth);
-		background.setOnKeyPressed(new EventHandler<KeyEvent>() {
-			public void handle(KeyEvent e) {
-				KeyCode kc = e.getCode();
-				if (kc == KeyCode.ESCAPE) functPause(); //press Esc to pause game
-				if (!gamePlaying) return;
-				if (kc == KeyCode.UP) user.moveUp();
-				if (kc == KeyCode.DOWN) user.moveDown();
-				if (kc == KeyCode.LEFT) user.moveLeft();
-				if (kc == KeyCode.RIGHT) user.moveRight();
-				if (kc == KeyCode.SPACE) fireProjectile();
-			}
-		});
-		background.setOnKeyReleased(new EventHandler<KeyEvent>() {
-			public void handle(KeyEvent e) {
-				KeyCode kc = e.getCode();
-				if (kc == KeyCode.UP || kc == KeyCode.DOWN) user.stopVertical();
-				if (kc == KeyCode.LEFT || kc == KeyCode.RIGHT) user.stopHorizontal();
-			}
-		});
-		root.getChildren().add(background);
+	    background.setFocusTraversable(true);
+	    background.setFitHeight(screenHeight);
+	    background.setFitWidth(screenWidth);
+
+	    background.setOnKeyPressed(inputHandler::handleKeyPress);
+	    background.setOnKeyReleased(inputHandler::handleKeyRelease);
+
+	    root.getChildren().add(background);
 	}
 
 	private void fireProjectile() {
