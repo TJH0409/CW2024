@@ -76,6 +76,8 @@
   
   - added anther set of movement(WASD) 
 
+  - adden comments for generate Javadocs
+
 ## Unexpected Problems: 
   - Got really sick in mid November and delayed all work (assignments, classes) by about a week
   - 5/12 
