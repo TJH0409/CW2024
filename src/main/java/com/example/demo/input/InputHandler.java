@@ -21,10 +21,10 @@ public class InputHandler {
         KeyCode key = event.getCode();
         switch (key) {
             case ESCAPE -> pauseGameAction.run();
-            case UP -> userPlane.moveUp();
-            case DOWN -> userPlane.moveDown();
-            case LEFT -> userPlane.moveLeft();
-            case RIGHT -> userPlane.moveRight();
+            case UP, W -> userPlane.moveUp();
+            case DOWN, S -> userPlane.moveDown();
+            case LEFT, A -> userPlane.moveLeft();
+            case RIGHT, D -> userPlane.moveRight();
             case SPACE -> fireProjectileAction.run();
             default -> {
             }
@@ -34,8 +34,8 @@ public class InputHandler {
     public void handleKeyRelease(KeyEvent event) {
         KeyCode key = event.getCode();
         switch (key) {
-            case UP, DOWN -> userPlane.stopVertical();
-            case LEFT, RIGHT -> userPlane.stopHorizontal();
+            case UP, W, DOWN, S -> userPlane.stopVertical();
+            case LEFT, A, RIGHT, D -> userPlane.stopHorizontal();
             default -> {
             }
         }
