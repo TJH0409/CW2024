@@ -1,5 +1,9 @@
 package com.example.demo.config;
 
+/**
+* Configuration constants for Enemy Planes in the game.
+* Defines visual, movement, and gameplay parameters for enemy aircraft.
+*/
 public class EnemyPlane2Config {
     public static final String IMAGE_NAME = "enemyplane2.png";
     public static final double INITIAL_X_POSITION = 800.0; 

@@ -4,6 +4,13 @@ import com.example.demo.image.ShieldImage;
 
 import javafx.scene.Group;
 
+/**
+ * Extends LevelView to provide specialized UI elements for Level Two.
+ * Adds a shield image to the standard level view components.
+ * 
+ * @author Developer
+ * @version 1.0
+ */
 public class LevelViewLevelTwo extends LevelView {
 
 	private static final int SHIELD_X_POSITION = 1150;
@@ -11,6 +18,13 @@ public class LevelViewLevelTwo extends LevelView {
 	private final Group root;
 	private final ShieldImage shieldImage;
 	
+    /**
+     * Constructs LevelViewLevelTwo with a root group and initial heart display.
+     * Initializes the parent LevelView and adds a shield image to the scene.
+     * 
+     * @param root The root JavaFX Group to which UI elements will be added
+     * @param heartsToDisplay Initial number of hearts to display for the player
+     */
 	public LevelViewLevelTwo(Group root, int heartsToDisplay) {
 		super(root, heartsToDisplay);
 		this.root = root;
@@ -18,14 +32,26 @@ public class LevelViewLevelTwo extends LevelView {
 		addImagesToRoot();
 	}
 	
+    /**
+     * Adds additional images specific to Level Two to the root group.
+     * In this case, adds the shield image to the scene.
+     */
 	private void addImagesToRoot() {
 		root.getChildren().addAll(shieldImage);
 	}
 	
+    /**
+     * Makes the shield image visible on the game screen.
+     * Used to display the shield during specific game events or states.
+     */
 	public void showShield() {
 		shieldImage.showShield();
 	}
 
+    /**
+     * Hides the shield image from the game screen.
+     * Used to remove the shield during specific game events or states.
+     */
 	public void hideShield() {
 		shieldImage.hideShield();
 	}

@@ -1,5 +1,9 @@
 package com.example.demo.config;
 
+/**
+ * Configuration constants for the Boss enemy in the game.
+ * Defines visual, movement, and gameplay parameters for the boss plane.
+ */
 public class BossConfig {
     public static final String IMAGE_NAME = "bossplane.png";
     public static final double INITIAL_X_POSITION = 1000.0;
@@ -9,7 +13,7 @@ public class BossConfig {
     public static final double SHIELD_PROBABILITY = 0.002;
     public static final int IMAGE_HEIGHT = 300;
     public static final int VERTICAL_VELOCITY = 8;
-    public static final int HEALTH = 10; // sry i cannot beat the boss
+    public static final int HEALTH = 10;
     public static final int MOVE_FREQUENCY = 5;
     public static final int MAX_SAME_MOVE_FRAMES = 10;
     public static final int Y_UPPER_BOUND = -100;
