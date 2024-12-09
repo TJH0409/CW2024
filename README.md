@@ -13,6 +13,8 @@
   - implement horizontal movements(left right) for user plane
 
   - new enemy added to the game
+  
+  - added another set of movement (WASD) for player
 
 ## Implemented but Not Working Properly: 
 
@@ -69,6 +71,8 @@
   - modified UserPlaneConfig.java, UserPlane.java and LevelParent.java to implement horizontal movement
 
   - split InputHandler.java from LevelParent.java for easier maintainance
+  
+  - added anther set of movement(WASD) 
 
 ## Unexpected Problems: 
   - Got really sick in mid November and delayed all work (assignments, classes) by about a week
