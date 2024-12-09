@@ -17,6 +17,8 @@
   - added another set of movement (WASD) for player
 
 ## Implemented but Not Working Properly: 
+  
+  - try to add a restart game function by pressing 'R' after the the incident explaind in the section [Unexpected Problems] but could not get it working (removed unused code)
 
 ## Features Not Implemented: 
 
@@ -24,7 +26,7 @@
 
   - random power-ups like invincible, double fire rate, increase movement speed occasionally drop when killing enemy(deleted, try to implement but causes error that i dont have enough time to fix)
 
-  - main menu (explain in unexpected problems) * temporary
+  - main menu (explain in unexpected problems)
 
 ## New Java Classes: 
 
