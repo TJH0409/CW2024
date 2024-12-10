@@ -76,7 +76,9 @@
   
   - added anther set of movement(WASD) 
 
-  - adden comments for generate Javadocs
+  - added comments for generate Javadocs
+  
+  - rename LevelTwo, LevelViewLevelTwo to LevelBoss and LevelViewLevelBoss and all related codes
 
 ## Unexpected Problems: 
   - Got really sick in mid November and delayed all work (assignments, classes) by about a week
