@@ -15,6 +15,8 @@
   - new enemy added to the game
   
   - added another set of movement (WASD) for player
+  
+  - added new level to the game
 
 ## Implemented but Not Working Properly: 
   
@@ -43,6 +45,8 @@
   - EnemyPlane2Config - added a new type of enemy
 
   - EnemyPlane2 - new enemy
+  
+  - LevelTwo - added a new level with new type of enemy
 
 ## Modified Java Classes: 
 
