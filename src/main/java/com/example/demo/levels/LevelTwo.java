@@ -5,7 +5,7 @@ import com.example.demo.actor.EnemyPlane2;
 
 /**
  * Represents the first level of the game with specific enemy spawning and level progression mechanics.
- * Extends LevelParent to implement level-specific behaviors for Level One.
+ * Extends LevelParent to implement level-specific behaviors for Level Two.
  */
 public class LevelTwo extends LevelParent {
 	
@@ -17,7 +17,7 @@ public class LevelTwo extends LevelParent {
 	private static final int PLAYER_INITIAL_HEALTH = 5;
 
     /**
-     * Constructs Level One with specified screen dimensions.
+     * Constructs Level Two with specified screen dimensions.
      * Initializes the level with a background, screen size, and player health.
      * 
      * @param screenHeight Total height of the game screen
@@ -49,7 +49,7 @@ public class LevelTwo extends LevelParent {
 	}
 
     /**
-     * Spawns enemy units for Level One.
+     * Spawns enemy units for Level Two.
      * Attempts to spawn enemies up to the total enemy limit based on spawn probability.
      * Enemies are positioned randomly within the vertical game area.
      */
@@ -66,7 +66,7 @@ public class LevelTwo extends LevelParent {
 	}
 
     /**
-     * Creates and returns the LevelView for Level One.
+     * Creates and returns the LevelView for Level Two.
      * 
      * @return A LevelView instance configured for this level
      */
