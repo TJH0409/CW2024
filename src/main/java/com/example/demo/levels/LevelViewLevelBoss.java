@@ -8,10 +8,8 @@ import javafx.scene.Group;
  * Extends LevelView to provide specialized UI elements for Level Two.
  * Adds a shield image to the standard level view components.
  * 
- * @author Developer
- * @version 1.0
  */
-public class LevelViewLevelTwo extends LevelView {
+public class LevelViewLevelBoss extends LevelView {
 
 	private static final int SHIELD_X_POSITION = 1150;
 	private static final int SHIELD_Y_POSITION = 500;
@@ -25,7 +23,7 @@ public class LevelViewLevelTwo extends LevelView {
      * @param root The root JavaFX Group to which UI elements will be added
      * @param heartsToDisplay Initial number of hearts to display for the player
      */
-	public LevelViewLevelTwo(Group root, int heartsToDisplay) {
+	public LevelViewLevelBoss(Group root, int heartsToDisplay) {
 		super(root, heartsToDisplay);
 		this.root = root;
 		this.shieldImage = new ShieldImage(SHIELD_X_POSITION, SHIELD_Y_POSITION);

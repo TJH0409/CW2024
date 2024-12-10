@@ -3,15 +3,15 @@ package com.example.demo.levels;
 import com.example.demo.actor.Boss;
 
 /**
- * Represents the second level of the game featuring a boss battle.
+ * Represents the level of the game featuring a boss battle.
  * This level introduces a unique gameplay mechanic where the player must defeat a single boss enemy.
  */
-public class LevelTwo extends LevelParent {
+public class LevelBoss extends LevelParent {
 
 	private static final String BACKGROUND_IMAGE_NAME = "/com/example/demo/images/background2.jpg";
 	private static final int PLAYER_INITIAL_HEALTH = 5;
 	private final Boss boss;
-	private LevelViewLevelTwo levelView;
+	private LevelViewLevelBoss levelView;
 	
     /**
      * Constructs Level Two with specified screen dimensions.
@@ -20,7 +20,7 @@ public class LevelTwo extends LevelParent {
      * @param screenHeight Total height of the game screen
      * @param screenWidth Total width of the game screen
      */
-	public LevelTwo(double screenHeight, double screenWidth) {
+	public LevelBoss(double screenHeight, double screenWidth) {
 		super(BACKGROUND_IMAGE_NAME, screenHeight, screenWidth, PLAYER_INITIAL_HEALTH);
 		boss = new Boss();
 	}
@@ -69,7 +69,7 @@ public class LevelTwo extends LevelParent {
      */
 	@Override
 	protected LevelView instantiateLevelView() {
-		levelView = new LevelViewLevelTwo(getRoot(), PLAYER_INITIAL_HEALTH);
+		levelView = new LevelViewLevelBoss(getRoot(), PLAYER_INITIAL_HEALTH);
 		return levelView;
 	}
 
