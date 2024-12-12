@@ -1,5 +1,5 @@
 ## GitHub: 
- 
+    https://github.com/TJH0409/CW2024
 ## Compilation Instructions: 
   ### Prerequisites
 
@@ -13,7 +13,7 @@
 
     Download the JavaFX SDK version 23.0.1 (or your required version) from the official website.
 
-    Extract it to a location on your system .
+    Extract it to a location on your system (e.g., D:\Nottingham\Year 2\Developing Maintainable Software\javafx-sdk-23.0.1).
 
    - Eclipse IDE:
 
