@@ -13,5 +13,5 @@ public class EnemyPlane2Config {
     public static final double FIRE_RATE = 0.01;
     public static final int IMAGE_HEIGHT = 150;
     public static final int HORIZONTAL_VELOCITY = -6;
-    public static final int HEALTH = 5;
+    public static final int HEALTH = 3;
 }

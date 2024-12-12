@@ -13,7 +13,7 @@ public class BossConfig {
     public static final double SHIELD_PROBABILITY = 0.002;
     public static final int IMAGE_HEIGHT = 300;
     public static final int VERTICAL_VELOCITY = 8;
-    public static final int HEALTH = 10;
+    public static final int HEALTH = 50;
     public static final int MOVE_FREQUENCY = 5;
     public static final int MAX_SAME_MOVE_FRAMES = 10;
     public static final int Y_UPPER_BOUND = -100;
