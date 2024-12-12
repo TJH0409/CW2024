@@ -1,5 +1,5 @@
-## GitHub: 
-    https://github.com/TJH0409/CW2024
+## GitHub: https://github.com/TJH0409/CW2024
+
 ## Compilation Instructions: 
   ### Prerequisites
 
